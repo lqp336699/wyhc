@@ -1,0 +1,16 @@
+{
+  "id": "1911900",
+  "name": "wyhc",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12717507",
+      "name": "new",
+      "font_class": "new",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    }
+  ]
+}

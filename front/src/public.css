@@ -1,0 +1,33 @@
+body,ul,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f4f4f4;
+    position:relative;
+}
+li{
+    list-style: none;
+}
+a{
+    color:#888;
+}
+div.van-popup--top{
+    z-index: 2 !important;
+}
+
+div .van-overlay{
+    z-index:1 !important;
+}
+div.van-popup--top{
+    top: 41px;
+}
+
+div .van-nav-bar .van-icon{
+    color:white;
+    font-size: 24px;
+    font-weight: 300;
+}
+div .van-nav-bar__title{
+    color:white;
+}
