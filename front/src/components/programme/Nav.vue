@@ -21,7 +21,9 @@
     }
     .nav{
         position: fixed;
+        z-index: 100;
         top: 0;
-        width: 100%;
+        left: 0;
+        right: 0;
     }
 </style>
