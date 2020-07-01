@@ -2,7 +2,7 @@
     <div class="programme">
         <ProgrammeNav />                                             <!--导航条-->
         <ProgrammeHeader />                                          <!--头部-->
-        <ProgrammeMatch v-for="item in 5" :key="item" />             <!--比赛信息-->
+        <ProgrammeMatch v-for="item in 2" :key="item" />             <!--比赛信息-->
         <ProgrammeEndSale />
         <ProgrammeOrider />
     </div>

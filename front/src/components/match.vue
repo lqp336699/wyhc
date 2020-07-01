@@ -40,6 +40,7 @@
                 <button class="seeMore">查看更多赛事信息 <van-icon class="icon" name="arrow" size="12" /></button>
             </div>
             <div class="matchRight">
+
                 <button class="seeMore">查看更多赛事信息 <van-icon class="icon" name="arrow" size="12" /></button>
             </div>
         </div>
@@ -53,30 +54,33 @@
         data(){
             return{
                 currentX:0,
-                mRL:0
+                mRL:0//第一屏第二屏标示
             }
         },
         name: "match",
         methods:{
             start(e) {
                 let eve = e.targetTouches[0];
-                this.currentX = eve.clientX;
+                this.currentX = eve.clientX; //按下的坐标
                 $(".matchBox")[0].addEventListener('touchmove', this.move);
                 $(".matchBox")[0].addEventListener('touchend', this.end);
 
             },
             move(e){
                 let eve = e.targetTouches[0];
-                this.nowX = eve.clientX;
-                if((this.currentX-this.mRL) - this.nowX>0&&(this.currentX-this.mRL) -this.nowX<410){
-                    document.getElementsByClassName("matchBox")[0].style.marginLeft=parseInt(this.nowX-(this.currentX-this.mRL))+"px";
+                this.nowX = eve.clientX; //滑动后的坐标
+                if(this.mRL===0&&this.nowX-this.currentX<0){
+                    document.getElementsByClassName("matchBox")[0].style.marginLeft=parseInt(this.nowX-(this.currentX))+"px";
+                }
+                else if(this.mRL!==0&&this.nowX-this.currentX>0){
+                    document.getElementsByClassName("matchBox")[0].style.marginLeft=-parseInt(407-(this.nowX-this.currentX))+"px";
                 }
             },
             end(){
                 let X = this.currentX-this.nowX;
                 if(this.mRL===0){//第一屏运动
                         let time1 = setInterval(()=>{
-                            if(X>250){//第一屏向右滑动
+                            if(X>230){//第一屏向右滑动
                                 X += 5;
                                 if(X >= 407){
                                     X=407;
@@ -94,25 +98,26 @@
                             document.getElementsByClassName("matchBox")[0].style.marginLeft= -X+"px";
                         },0.1)
                     }else{//第二屏运动
-                    let time3 = setInterval(()=>{
-                        if(X>-250){//第二屏向右滑动
-                            X -= 5;
-                            if(X <= -407){
-                                X=-407;
-                                clearInterval(time3);
-                                this.mRL=X;
+
+                        let left =407+X;
+                        let time3 = setInterval(() => {
+                            if(X>-230) { //右滑
+                                left += 5;
+                                if(left>=407){
+                                    left=407;
+                                    clearInterval(time3);
+                                    this.mRL = left;
+                                }
+                            }else{
+                                left -= 5;
+                                if(left<=0){
+                                    left=0;
+                                    clearInterval(time3);
+                                    this.mRL = left;
+                                }
                             }
-                        }
-                        // else{
-                        //     X -= 5;
-                        //     if(X <= 0){//第二屏向左滑动
-                        //         X=0;
-                        //         clearInterval(time);
-                        //         this.mRL=X;
-                        //     }
-                        // }
-                        document.getElementsByClassName("matchBox")[0].style.marginLeft= X+"px";
-                    },0.1)
+                            document.getElementsByClassName("matchBox")[0].style.marginLeft = -left + "px";
+                        }, 0.1)
                 }
             }
         }
