@@ -1,10 +1,14 @@
 <template>
-
+    <MyFootNav />
 </template>
 
 <script>
+    import MyFootNav from './../../components/Nav'
     export default {
-        name: "My"
+        name: "My",
+        components:{
+            MyFootNav
+        }
     }
 </script>
 

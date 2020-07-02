@@ -1,37 +1,37 @@
 <template>
-    <div class="CardBox">
-        <router-link to="/Programme">
-            <div class="card" v-for="(item,index) in cardData" :key="index">
-                <CardPerson :data="item" />
-               <CardFangAn />
+    <div class="card-top">
+        <div>
+            <img src="http://lqp336699.xyz/img/3.png" alt="">
+        </div>
+        <div class="card-top-center">
+            <div class="name">{{data.name}}</div>
+            <div class="occupation">{{data.occupation }}</div>
+        </div>
+        <div class="card-top-right" v-if="!data.follow">
+            <p>{{data.rate}}<span class="ic">%</span></p>
+            <p>命中率</p><span>{{data.show}}</span>
+        </div>
+        <div class="card-top-right" v-if="data.follow">
+            <div class="follow">
+                <van-icon name="plus" class="icon" />关注
             </div>
-        </router-link>
+        </div>
     </div>
 </template>
 
 <script>
-    import CardFangAn from './../fangAn'
-    import CardPerson from './../Person'
     export default {
-        name: "Card",
+        name: "Person",
         props:[
-            "cardData"
+            "data"
         ],
-        components:{
-            CardFangAn,CardPerson
+        mounted(){
+            console.log(this.data);
         }
     }
 </script>
 
 <style scoped>
-    .CardBox{
-        margin-top: 50px;
-    }
-    .card{
-        background-color: #fff;
-        padding:1px 5px 15px;
-        border-bottom: 1px solid #eee;
-    }
     .card-top{
         margin-top: 10px;
         overflow: hidden;
@@ -76,5 +76,16 @@
         position: absolute;
         top: 0;
         right: -10px;
+    }
+    .follow{
+        background-color: red;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+    }
+    .icon{
+        margin-right: 5px;
     }
 </style>

@@ -1,10 +1,14 @@
 <template>
-
+    <matchFootNav />
 </template>
 
 <script>
+    import matchFootNav from './../../components/Nav'
     export default {
-        name: "Match"
+        name: "Match",
+        components:{
+            matchFootNav
+        }
     }
 </script>
 

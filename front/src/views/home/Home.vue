@@ -5,6 +5,7 @@
         <HomeSelected :selectedData="this.homeData.selected" />        <!--精选-->
         <HomeNav  :navData="this.homeData.nav"/>                       <!--导航条-->
         <HomeCard :cardData="this.homeData.card" />                    <!--card-->
+        <HomeFootNav />
     </div>
 </template>
 
@@ -15,6 +16,7 @@
     import HomeSelected from './../../components/home/Selected'
     import HomeNav from './../../components/home/Nav'
     import HomeCard from './../../components/home/Card'
+    import HomeFootNav from './../../components/Nav'
 
     export default {
         name: "Home",
@@ -125,7 +127,7 @@
             }
         },
         components:{
-            HomeExport,HomeSwiper,HomeSelected,HomeNav,HomeCard
+            HomeExport,HomeSwiper,HomeSelected,HomeNav,HomeCard,HomeFootNav
         },
     }
 </script>

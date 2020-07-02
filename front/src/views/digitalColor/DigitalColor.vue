@@ -1,10 +1,14 @@
 <template>
-
+    <DigitalColorFootNav />
 </template>
 
 <script>
+    import DigitalColorFootNav from './../../components/Nav'
     export default {
-        name: "DigitalColor"
+        name: "DigitalColor",
+        components:{
+            DigitalColorFootNav
+        }
     }
 </script>
 

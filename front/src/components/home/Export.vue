@@ -5,10 +5,12 @@
             <van-tab title="足球专家">
                 <van-grid :column-num="4"  :border="false">
                     <van-grid-item  v-for="(item,index) in exportData.footExport" :key="index">
-                        <li class="footItem" >
-                            <img :src="item.img" alt="">
-                            <span>{{item.name}}</span>
-                        </li>
+                        <router-link to="/personalDetails">
+                            <li class="footItem" >
+                                <img :src="item.img" alt="">
+                                <span>{{item.name}}</span>
+                            </li>
+                        </router-link>
                     </van-grid-item>
                 </van-grid>
             </van-tab>

@@ -62,8 +62,8 @@
             start(e) {
                 let eve = e.targetTouches[0];
                 this.currentX = eve.clientX; //按下的坐标
-                $(".matchBox")[0].addEventListener('touchmove', this.move);
-                $(".matchBox")[0].addEventListener('touchend', this.end);
+                $(".matchBox").on('touchmove',this.move);
+                $(".matchBox").on('touchend',this.end)
 
             },
             move(e){

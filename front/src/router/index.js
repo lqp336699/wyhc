@@ -30,6 +30,10 @@ Vue.use(VueRouter);
     path: '/programme',
     name: ' programme',
     component: () => import( '../views/programme/Programme')
+  },{
+    path: '/personalDetails',
+    name: ' PersonalDetails',
+    component: () => import( '../views/personalDetails/PersonalDetails')
   },
 ];
 

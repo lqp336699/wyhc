@@ -1,14 +1,13 @@
 <template>
-    <div class="oriderBox">
-        <div class="desc"><van-icon name="warning" class="icon" size="6" /><p> 观点仅供参考，投注需谨慎，如需购买彩请前往彩票店</p></div>
-        <div class="Orider">
-            <div class="one">需支付:</div>
-            <div>58红豆</div>
-            <div class="three">首单不中退</div>
-            <div class="four">立即支付</div>
+        <div class="oriderBox">
+            <div class="desc"><van-icon name="warning" class="icon" size="6" /><p> 观点仅供参考，投注需谨慎，如需购买彩请前往彩票店</p></div>
+            <div class="Orider">
+                <div class="one">需支付:</div>
+                <div>58红豆</div>
+                <div class="three">首单不中退</div>
+                <div class="four">立即支付</div>
+            </div>
         </div>
-    </div>
-
 </template>
 
 <script>

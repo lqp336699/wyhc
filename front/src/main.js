@@ -8,10 +8,13 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 import './public.css'
 import './assets/iconfont/iconfont.css'
+import VueTouch from 'vue-touch'
+import echarts from 'echarts'
 
+Vue.prototype.$echarts = echarts
+Vue.use(VueTouch, {name: 'v-touch'});
 Vue.use(Vant);
 Vue.use(Lazyload);
-
 Vue.config.productionTip = false;
 
 new Vue({
