@@ -1,9 +1,9 @@
 <template>
     <div class="CardBox">
         <router-link to="/Programme">
-            <div class="card" v-for="(item,index) in cardData" :key="index">
+            <div class="card" v-for="(item,index) in this.Data" :key="index">
                 <CardPerson :data="item" />
-               <CardFangAn />
+               <CardFangAn :data="item"/>
             </div>
         </router-link>
     </div>
@@ -11,12 +11,22 @@
 
 <script>
     import CardFangAn from './../fangAn'
-    import CardPerson from './../Person'
+    import CardPerson from './../AvatarNamePosition'
     export default {
         name: "Card",
         props:[
-            "cardData"
+            "card"
         ],
+        data(){
+            return{
+                Data:[]
+        }
+        },
+        mounted(){
+            this.$axios('/homeList.json').then(res=>{
+                    this.Data = res.data.data;
+                }
+            )},
         components:{
             CardFangAn,CardPerson
         }

@@ -3,13 +3,13 @@
         <div class="card-top" >
             <div>
                 <img :src="data.img" alt="">
-                <div class="follow">关注</div>
+                <div class="follow" v-if="data.guanzhu">关注</div>
             </div>
             <div class="card-top-center">
                 <div class="name">{{data.name}}</div>
-                <p class="position">{{data.position}} <span>{{ data.record }}</span></p>
+                <p class="position">{{data.position}} <span v-if="data.record">{{ data.record }}</span></p>
                 <p >{{data.Odds}}</p>
-                <p class="long">
+                <p class="long" v-if="data.long">
                     擅长联赛
                     <span v-for="(item2) in data.long" :key="item2">
                         {{item2}}
@@ -19,10 +19,10 @@
             <div class="card-top-right" v-if="data.profitRate">
                 <p>{{data.profitRate}}</p>
                 <span class="ico">%</span>
-                <p>盈利率</p>
-                <p class="iconfont icon">&#xe607;</p>
+                <p>{{data.type}}</p>
+                <p class="iconfont icon" v-if="data.icon">&#xe607;</p>
             </div>
-            <div class="card-top-right" v-if="!data.profitRate">
+            <div class="card-top-right" v-if="data.aa">
                 <Chart :data="{height:'100px',width:'100px'}"/>
             </div>
         </div>

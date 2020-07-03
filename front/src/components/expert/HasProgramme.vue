@@ -35,7 +35,7 @@
         mounted(){
             let that = this;
             this.$axios('/programme.json').then(res=>{
-                that.data = res.data;
+                that.data = res.data.data;
             })
         }
     }

@@ -1,0 +1,48 @@
+{ "data":[
+  {"id": 1,
+    "top": {
+        "follow":false,
+        "img": "https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg",
+        "name": "李清平",
+        "position": "外籍分析师",
+        "bean": 58
+      },
+    "bottom":
+      {
+        "timeBean":{ "time":"7小时前发布","bean":"58红豆" },
+        "comptingFoot":{ "time":"07/03","type" :"西甲","red":"罗马","blue":"乌迪内斯" },
+        "title":{"name":"胡敏娟","occupation":"足彩分析师","rate":"100","describe":"【14连红！ 近20中19爆红】 英冠3场优惠：巴恩实力+女王巡游+威刚2293字","chuan":"[3串1]"}
+      }
+  }, {"id": 2,
+    "top": {
+        "follow":false,
+        "img": "https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg",
+        "name": "李清平",
+        "position": "外籍分析师",
+        "bean": 58
+      },
+    "bottom":
+      {
+        "timeBean":{ "time":"7小时前发布","bean":"58红豆" },
+        "comptingFoot":{ "time":"07/03","type" :"西甲","red":"罗马","blue":"乌迪内斯" },
+        "title":{"describe":"【14连红！ 近20中19爆红】 英冠3场优惠：巴恩实力+女王巡游+威刚2293字"}
+      }
+  }, {"id": 3,
+    "top": {
+        "follow":false,
+        "img": "https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg",
+        "name": "李清平",
+        "position": "外籍分析师",
+        "bean": 58
+      },
+    "bottom":
+      {
+        "timeBean":{ "time":"7小时前发布","bean":"58红豆" },
+        "comptingFoot":{ "time":"07/03","type" :"西甲","red":"罗马","blue":"乌迪内斯" },
+        "title":{"describe":"【14连红！ 近20中19爆红】 英冠3场优惠：巴恩实力+女王巡游+威刚2293字"}
+      }
+  }
+]
+}
+
+

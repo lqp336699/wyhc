@@ -1,5 +1,5 @@
 <template>
-    <p class="font"><span class="chuan">{{data.blue}}</span>{{data.describe}}</p>
+    <p class="font"><span class="chuan" v-if="data.blue">{{data.blue}}</span>{{data.describe}}</p>
 </template>
 
 <script>
