@@ -7,14 +7,9 @@
             <div class="name">{{data.name}}</div>
             <div class="occupation">{{data.occupation }}</div>
         </div>
-        <div class="card-top-right" v-if="!data.follow">
+        <div class="card-top-right" >
             <p>{{data.rate}}<span class="ic">%</span></p>
             <p>命中率</p><span>{{data.show}}</span>
-        </div>
-        <div class="card-top-right" v-if="data.follow">
-            <div class="follow">
-                <van-icon name="plus" class="icon" />关注
-            </div>
         </div>
     </div>
 </template>
@@ -24,10 +19,7 @@
         name: "Person",
         props:[
             "data"
-        ],
-        mounted(){
-            console.log(this.data);
-        }
+        ]
     }
 </script>
 
@@ -76,16 +68,5 @@
         position: absolute;
         top: 0;
         right: -10px;
-    }
-    .follow{
-        background-color: red;
-        padding: 5px 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color:white;
-    }
-    .icon{
-        margin-right: 5px;
     }
 </style>

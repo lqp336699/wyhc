@@ -36,9 +36,7 @@
         background-color: #fff;
 
     }
-    .dataBox{
-        padding: 0 10px 10px;
-    }
+
     .box{
         overflow: hidden;
         margin-top: 10px;

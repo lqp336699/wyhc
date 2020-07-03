@@ -1,0 +1,49 @@
+{
+  "data":[
+    {
+      "id":1,
+      "img":"https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png",
+      "name":"李清平",
+      "position":"足彩分析师",
+      "fans":"13494",
+      "description": "高手中的高中，非常厉害",
+      "label":[
+        "高手中的高中","非常厉害"
+      ],
+      "follow":true
+    },{
+      "id":2,
+      "img":"https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png",
+      "name":"李清平",
+      "position":"足彩分析师",
+      "fans":"13494",
+      "description": "高手中的高中，非常厉害",
+      "label":[
+        "高手中的高中","非常厉害"
+      ],
+      "follow":true
+    },{
+      "id":3,
+      "img":"https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png",
+      "name":"李清平",
+      "position":"足彩分析师",
+      "fans":"13494",
+      "description": "高手中的高中，非常厉害",
+      "label":[
+        "高手中的高中","非常厉害"
+      ],
+      "follow":true
+    },{
+      "id":4,
+      "img":"https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png",
+      "name":"李清平",
+      "position":"足彩分析师",
+      "fans":"13494",
+      "description": "高手中的高中，非常厉害",
+      "label":[
+        "高手中的高中","非常厉害"
+      ],
+      "follow":true
+    }
+  ]
+}

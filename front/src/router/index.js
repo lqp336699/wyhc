@@ -28,11 +28,12 @@ Vue.use(VueRouter);
     component: () => import( '../views/my/My')
   },{
     path: '/programme',
-    name: ' programme',
+    name: 'Programme',
     component: () => import( '../views/programme/Programme')
-  },{
-    path: '/personalDetails',
-    name: ' PersonalDetails',
+  },
+  {
+    path: '/personalDetails/:id',
+    name: 'PersonalDetails',
     component: () => import( '../views/personalDetails/PersonalDetails')
   },
 ];

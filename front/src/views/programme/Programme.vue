@@ -22,7 +22,8 @@
         name: "programme",
         components:{
             ProgrammeNav,ProgrammeHeader,ProgrammeMatch,ProgrammeEndSale,ProgrammeOrider,ProgrammeOtherOption,ProgrammeOtherSell
-        }
+        },
+
     }
 </script>
 

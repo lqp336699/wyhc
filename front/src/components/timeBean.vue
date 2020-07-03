@@ -1,5 +1,5 @@
 <template>
-    <p class="tt"> <span class="time">{{data.time}}</span>  <span class="bean">{{data.bean}}</span></p>
+    <p class="tt"> <span class="time">{{data.time}}前发布</span>  <span class="bean">{{data.bean}}红豆</span></p>
 </template>
 
 <script>

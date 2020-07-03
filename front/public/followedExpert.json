@@ -1,0 +1,16 @@
+{
+  "followed":[
+    {   "id":1,"remind":true, "near":"86%", "average":1.8,"good":["自由杯"],"newFanAn":3,
+      "img":"https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg","name":"李金羽","position":"前国脚"
+     },{   "id":2,"remind":true, "near":"86%", "average":1.8,"good":["自由杯"],"newFanAn":3,
+      "img":"https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg","name":"李金羽","position":"前国脚"
+     },{   "id":3,"remind":true, "near":"86%", "average":1.8,"good":["自由杯"],"newFanAn":3,
+      "img":"https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg","name":"李金羽","position":"前国脚"
+     },{   "id":4,"remind":true, "near":"86%", "average":1.8,"good":["自由杯"],"newFanAn":3,
+      "img":"https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg","name":"李金羽","position":"前国脚"
+     },{   "id":5,"remind":true, "near":"86%", "average":1.8,"good":["自由杯"],"newFanAn":3,
+      "img":"https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg","name":"李金羽","position":"前国脚"
+     }
+  ]
+}
+

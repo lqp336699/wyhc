@@ -1,0 +1,35 @@
+{ "data": [
+  {   "id": 1,
+      "follow":false,
+      "img": "https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg",
+      "name": "李清平",
+      "position": "外籍分析师",
+      "bean": 58,
+      "long":["巴西以","意甲"],
+      "Odds":"平均赔率1.7",
+      "record":"近3场中3场",
+      "profitRate":"740"
+    }, {   "id": 1,
+      "follow":false,
+      "img": "https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg",
+      "name": "李清平",
+      "position": "外籍分析师",
+      "bean": 58,
+      "long":["巴西以","意甲"],
+      "Odds":"平均赔率1.7",
+      "record":"近3场中3场",
+      "profitRate":"740"
+    }, {   "id": 1,
+      "follow":false,
+      "img": "https://gw.alicdn.com/imgextra/i3/77/O1CN01MwxmEl1CRJ6VGyCyZ_!!77-0-lubanu.jpg",
+      "name": "李清平",
+      "position": "外籍分析师",
+      "bean": 58,
+      "long":["巴西以","意甲"],
+      "Odds":"平均赔率1.7",
+      "record":"近3场中3场",
+      "profitRate":"740"
+    }
+]}
+
+

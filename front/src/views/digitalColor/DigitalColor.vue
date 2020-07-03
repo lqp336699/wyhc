@@ -1,5 +1,7 @@
 <template>
-    <DigitalColorFootNav />
+    <div>
+        <DigitalColorFootNav />
+    </div>
 </template>
 
 <script>

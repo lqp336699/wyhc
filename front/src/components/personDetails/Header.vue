@@ -1,32 +1,61 @@
 <template>
+    <!--"newFanAn":[{"timeBean":{ "time":"7小时前发布","bean":"58红豆" },-->
+    <!--"comptingFoot":{ "time":"07/03","type" :"西甲","red":"罗马","blue":"乌迪内斯" },-->
+    <!--"title":{"name":"胡敏娟","occupation":"足彩分析师","rate":"100","description":"【14连红！ 近20中19爆红】 英冠3场优惠：巴恩实力+女王巡游+威刚2293字","chuan":"[3串1]"}-->
+    <!--}]-->
     <div class="box">
         <div class="top">
             <van-icon size="24" name="arrow-left" @click="()=>{$router.go(-1)}" />
             <span class="iconfont share">&#xe639;</span>
         </div>
         <div class="person">
-            <img src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png" alt="">
+            <img :src="this.data.img" alt="">
             <div class="data">
                 <div class="name">
-                    <div class="namea">洪鹰</div>
+                    <div class="namea">{{this.data.name}}</div>
                     <div class="red"> <span class="iconfont">&#xe611;</span>爆红期</div>
                 </div>
-                <div class="position">足彩分析师<span>|</span>1761粉丝</div>
-                <div class="follow"><van-icon class="icon" size="16" style="font-weight: 600" name="plus" />关注</div>
+                <div class="position">{{this.data.position}}<span>|</span>{{this.data.fans}}粉丝</div>
+                <div class="follow" v-if="!this.data.follow" @click="addFollow(this.data.id)"><van-icon class="icon" size="16" style="font-weight: 600" name="plus" />关注</div>
+                <div class="follow" v-if="this.data.follow" @click="addFollow(this.data.id)"><van-icon class="icon" size="16" name="success" style="font-weight: 600"  />已关注</div>
             </div>
         </div>
         <div class="description">
-            深度啊但是发射点士大夫发生的发生的阀手动阀反倒是安抚规划对方口令熬过给哦啊是个哦啊
+           {{this.data.description}}
         </div>
         <div class="bottom">
-            <span>3次进足球周盈利榜</span>
+            <span v-for="(item,index ) in this.data.label" :key="index">{{ item }}</span>
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Header"
+        name: "Header",
+        data(){
+            return{
+                data:{}
+            }
+        },
+        props:[
+            "id",
+        ],
+        mounted(){
+            let that = this;
+            this.$axios('/programmeHeader.json')
+                .then(response => {
+                  that.data = response.data.data.find(item=>{
+                      if(item.id === parseInt(that.$props.id)) {
+                           return item
+                       }
+                  });
+                })
+        },
+        methods:{
+            addFollow(id){
+                this.$store.commit('addFollow',id)
+            }
+        }
     }
 </script>
 

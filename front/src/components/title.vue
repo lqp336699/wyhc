@@ -1,5 +1,5 @@
 <template>
-    <p class="font"><span class="chuan">{{data.chuan}}</span>{{data.description}}</p>
+    <p class="font"><span class="chuan">{{data.blue}}</span>{{data.describe}}</p>
 </template>
 
 <script>

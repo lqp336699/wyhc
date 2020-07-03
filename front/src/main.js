@@ -10,8 +10,10 @@ import './public.css'
 import './assets/iconfont/iconfont.css'
 import VueTouch from 'vue-touch'
 import echarts from 'echarts'
+import axios from 'axios'
 
-Vue.prototype.$echarts = echarts
+Vue.prototype.$axios = axios;
+Vue.prototype.$echarts = echarts;
 Vue.use(VueTouch, {name: 'v-touch'});
 Vue.use(Vant);
 Vue.use(Lazyload);
